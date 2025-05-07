@@ -1,6 +1,10 @@
 #define F_CPU 16000000UL
 #include <avr/io.h>
-#include <util/delay.h>
+#include <avr/interrupt.h>
+
+volatile uint32_t ticks = 0;
+volatile uint8_t flag_1s = 0;
+
 
 void uart_init(void) {
     // Baud rate 9600 (UBRR = F_CPU / 16 / BAUD - 1)
@@ -42,20 +46,42 @@ void send_temperature(float temperature) {
     uart_send_string(" C\r\n");              // Envia 'C' + nova linha
 }
 
+// Interrupção do Timer0: ocorre a cada 1ms
+ISR(TIMER0_COMPA_vect) {
+    ticks++;
+    if (ticks >= 1000) {  // 1000ms = 1s
+        ticks = 0;
+        flag_1s = 1;
+    }
+}
+
+
+void timer0_init(void) {
+    TCCR0A = (1 << WGM01);               // modo CTC
+    TCCR0B = (1 << CS01) | (1 << CS00);  // prescaler 64
+    OCR0A = 249;                         // (16MHz / 64 / 1000Hz) - 1
+    TIMSK0 = (1 << OCIE0A);              // habilita interrupção do Timer0
+}
+
 int main(void) {
     uart_init();
     adc_init();
+    timer0_init();
+    sei();  
 
     while (1) {
-        uint16_t reading = adc_read();
+        if (flag_1s) {
+            flag_1s = 0;
 
-        // Conversão: tensão = leitura * (5000 mV / 1024)
-        float voltage = reading * (5000.0 / 1024.0);
+            uint16_t reading = adc_read();
 
-        // Temperatura = tensão / 10 mV/°C
-        float temperature = voltage / 10.0;
+            // Conversão: tensão = leitura * (5000 mV / 1024)
+            float voltage = reading * (5000.0 / 1024.0);
 
-        send_temperature(temperature);
-        _delay_ms(1000);
+            // Temperatura = tensão / 10 mV/°C
+            float temperature = voltage / 10.0;
+
+            send_temperature(temperature);
+        }
     }
 }
