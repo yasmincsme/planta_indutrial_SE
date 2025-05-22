@@ -23,6 +23,7 @@ volatile uint8_t reading = 0;
 volatile uint8_t send_data_flag = 0;
 volatile uint8_t producao_parada = 0;
 volatile uint8_t temperatura_critica = 0;
+volatile uint8_t last_pin_state = 0;
 
 
 float temperature = 0.0;
@@ -55,13 +56,31 @@ ISR(TIMER2_COMPA_vect) {
     send_data_flag = 1;
 }
 
-ISR(PCINT0_vect) {
-    if (PINB & (1 << PB0)) {
-        mov_sensor = 1;
+ISR(PCINT2_vect) {
+    uint8_t current_state = PIND;
+
+    // Detecta borda de descida em PD4 (D4)
+    if ((last_pin_state & (1 << PD4)) && !(current_state & (1 << PD4))) {
+        mov_sensor = 1; 
     }
-    if (PINB & (1 << PB1)) {
-        inclination_sensor = 1;
+
+    // Detecta borda de subida em PD4 (D4)
+    if (!(last_pin_state & (1 << PD4)) && (current_state & (1 << PD4))) {
+        mov_sensor = 1;  
     }
+
+    // Detecta borda de descida em PD5 (D5)
+    if ((last_pin_state & (1 << PD5)) && !(current_state & (1 << PD5))) {
+        inclination_sensor = 1;  
+    }
+
+    // Detecta borda de subida em PD5 (D5)
+    if (!(last_pin_state & (1 << PD5)) && (current_state & (1 << PD5))) {
+        inclination_sensor = 1;  
+    }
+
+    // Atualiza o estado anterior
+    last_pin_state = current_state;
 }
 
 void uart_init(unsigned int ubrr) {
@@ -261,22 +280,23 @@ int main(void) {
     uart_init(103);  // 9600 bps @ 16 MHz
     adc_init();
     timer1_init();
-    timer2_init();
+    timer2_init(); //d4(presença pd4) e d5(inclinação pd5)
     Wire.begin();
 
-    DDRB &= ~(1 << DDB0); // PB0 entrada (sensor movimento)
-    DDRB &= ~(1 << DDB4); // PB1 entrada (sensor inclinação)
+    DDRD &= ~(1 << DDD4); // PB0 entrada (sensor movimento)
+    DDRD &= ~(1 << DDD5); // PB1 entrada (sensor inclinação)
     DDRD |= (1 << LED_VERDE_PIN) | (1 << LED_VERMELHO_PIN) | (1 << BUZZER_PIN); // Saídas
     
     // pull-ups
-    PORTB |= (1 << PORTB0) | (1 << PORTB1);
+    PORTD |= (1 << PORTD4) | (1 << PORTD5);
     
     // desliga buzzer e LEDs inicialmente
     PORTD &= ~((1 << LED_VERDE_PIN) | (1 << LED_VERMELHO_PIN) | (1 << BUZZER_PIN));
     
     // interrupções
-    PCICR |= (1 << PCIE0);
-    PCMSK0 |= (1 << PCINT0) | (1 << PCINT1);
+    PCICR |= (1 << PCIE2);  // Habilita interrupções no grupo PORTD (PCINT16 a PCINT23)
+    PCMSK2 |= (1 << PCINT20) | (1 << PCINT21);  // Habilita D4 (PD4) e D5 (PD5)
+
     sei();
     
     // verifica OLED
