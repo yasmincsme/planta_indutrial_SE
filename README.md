@@ -32,8 +32,6 @@ gh repo clone nailasuely/planta_indutrial_SE
 - [Tecnologias e Ferramentas Utilizadas](#Tecnologias-e-Ferramentas-Utilizadas)
 - [Arquitetura do Sistema](#Arquitetura-do-Sistema)
 - [Testes](#Testes)
-- [Como utilizar](#Como-utilizar)
-- [Conclusão](#Conclusão)
 - [Equipe](#equipe)
 - [Tutor](#tutor)
 - [Referências](#referências)
