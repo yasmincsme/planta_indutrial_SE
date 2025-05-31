@@ -88,7 +88,7 @@ O sistema opera com dois Arduinos Nano em uma configuração Master/Slave via I2
 ### Arduino 2: Chão de Fábrica (Master I2C)
 * Inicia toda a comunicação I2C.
 * Possui um botão de parada local (D2) com função de reinício por duplo clique.
-* Gerencia sensores de temperatura (A0), inclinação (D11), presença (D12) e nível de óleo (A4 - **Requer atenção, veja "Como Utilizar"**).
+* Gerencia sensores de temperatura (A0), inclinação (D11), presença (D12) e nível de óleo.
 * Controla motores de corte (PWM em D5, D6) e LEDs de status/alerta (D8, D10, D3).
 * Aciona um buzzer (A3) para alertas críticos.
 * Exibe informações no display OLED (contagem de blocos, status).
