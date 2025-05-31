@@ -156,13 +156,34 @@ No contexto deste projeto, o sensor de movimento foi representado por uma chave 
 
 De maneira semelhante ao sensor de movimento, o sensor de inclinação foi representado pela chave DIP 2. Essa chave permite simular situações em que o dispositivo sofre uma inclinação além de um determinado limite. Quando a chave DIP 2 está acionada, o sistema interpreta que há inclinação, então o sistema é desativado e há o acionamento do motor de correção de eixo, representado no circuito por um segundo LED vermelho. 
 
+<div align="center">
+   <img width="" src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-adjustable-rotary-potentiometer-component-with-metal-knob-for-electrical-circuits-and-png-image_14201974.png" />
+    <p> Potenciômetro de 1K</p>
+</div>
+texto aqui 
+</p>
+
 ### Sensor de Temperatura (Potenciômetro)
 
 O potenciômetro foi utilizado para simular a variação de temperatura no sistema. Este componente gera um sinal analógico, cuja tensão varia proporcionalmente à sua posição mecânica. O microcontrolador lê essa variação através de um pino analógico e interpreta os valores como diferentes níveis de temperatura, isso permite testar as respostas do sistema a diferentes condições térmicas.
 
+<div align="center">
+   <img width="" src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-adjustable-rotary-potentiometer-component-with-metal-knob-for-electrical-circuits-and-png-image_14201974.png" />
+    <p> Potenciômetro de 1K</p>
+</div>
+texto aqui 
+</p>
+
 ### Sensor de Nível (Infrared Sharp GP2D12)
 
 O sensor Sharp GP2D12 é um sensor infravermelho de distância que funciona através de triangulação óptica. Ele mede a distância de objetos dentro de uma faixa de aproximadamente 10 a 80 cm. No projeto, ele foi utilizado para simular um sensor de nível, detectando, por exemplo, o nível de enchimento do reservatório de óleo. O sinal de saída é analógico, e sua leitura permite que o sistema interprete diferentes níveis conforme a distância detectada.
+
+<div align="center">
+   <img width="" src="https://d229kd5ey79jzj.cloudfront.net/137/images/137_1_X.png?20250218090419" />
+    <p> Sensor sharp GP2Y0A02YK0F</p>
+</div>
+texto aqui 
+</p>
 
 ![-----------------------------------------------------](https://github.com/nailasuely/breakout-problem3/blob/main/assets/img/prancheta.png)
 
