@@ -206,7 +206,7 @@ Outra aplicação importante da temporização está no gerenciamento dos alarme
 O sistema inicia corretamente, com todas as informações sendo exibidas no monitor serial. Os motores funcionam normalmente, e o LED laranja é aceso, indicando que a produção está ativa.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/teste_geral.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
@@ -216,7 +216,7 @@ texto aqui
 O botão do supervisor controla o funcionamento do Arduino no chão de fábrica. Quando pressionado, a produção é interrompida: os motores desligam, o LED vermelho acende e o display OLED exibe a mensagem indicando que a produção foi pausada. Ao pressionar novamente, a produção é retomada — os motores voltam a funcionar e o LED laranja acende, sinalizando o retorno à operação normal.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/botao_supervisor.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
@@ -226,7 +226,7 @@ texto aqui
 O botão localizado no chão de fábrica funciona de maneira semelhante ao botão do supervisor, permitindo pausar e retomar a produção. A diferença é que, mesmo que a produção tenha sido interrompida pelo chão de fábrica, o supervisor tem autoridade para religar o sistema.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/botao_chao.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
@@ -236,7 +236,7 @@ texto aqui
 O potenciômetro 1 permite ajustar a velocidade de giro do motor 1. Esse ajuste influencia diretamente a velocidade de produção, permitindo aumentar ou diminuir conforme a necessidade.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/motor_1.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
@@ -246,7 +246,7 @@ texto aqui
 Da mesma forma, o potenciômetro 2 controla a velocidade de giro do motor 2, também impactando diretamente na velocidade da linha de produção.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/motor_2.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
@@ -256,7 +256,7 @@ texto aqui
 Se a temperatura atinge valores fora da faixa de operação, o sistema entra em estado de segurança: os motores são desligados, o LED vermelho acende, e uma mensagem de alerta é exibida tanto no display OLED quanto no monitor serial. A produção só é retomada quando a temperatura volta ao valor adequado.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/temperatura_critica.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
@@ -266,7 +266,7 @@ texto aqui
 Quando o sensor detecta uma inclinação anormal, o sistema interrompe imediatamente a produção. Além disso, o motor de correção de eixo é acionado, representado no protótipo pelo acendimento de um LED vermelho adicional.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/inclinacao.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
@@ -276,7 +276,7 @@ texto aqui
 Ao detectar movimento inesperado, o sensor interrompe automaticamente a produção como medida de segurança. Quando o movimento indesejado cessa, o sistema retoma a produção normalmente. O funcionamento é análogo ao do sensor de inclinação.
 
 <div align="center">
-   <img width="" src="https://github.com/nailasuely/" />
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/movimento.gif" />
     <p> Fig X. Teste</p>
 </div>
 texto aqui 
