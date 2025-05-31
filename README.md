@@ -156,7 +156,6 @@ No contexto deste projeto, o sensor de movimento foi representado por uma chave 
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/switch_dip.png" />
     <p> Exemplos de chaves DIP</p>
 </div>
-texto aqui 
 </p>
 
 ### Sensor de Inclinação (Chave DIP 2)
@@ -171,7 +170,6 @@ O potenciômetro foi utilizado para simular a variação de temperatura no siste
    <img width="" src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-adjustable-rotary-potentiometer-component-with-metal-knob-for-electrical-circuits-and-png-image_14201974.png" />
     <p> Potenciômetro de 1K</p>
 </div>
-texto aqui 
 </p>
 
 ### Sensor de Nível (Infrared Sharp GP2D12)
@@ -182,7 +180,6 @@ O sensor Sharp GP2D12 é um sensor infravermelho de distância que funciona atra
    <img width="" src="https://d229kd5ey79jzj.cloudfront.net/137/images/137_1_X.png?20250218090419" />
     <p> Sensor sharp GP2Y0A02YK0F</p>
 </div>
-texto aqui 
 </p>
 
 ![-----------------------------------------------------](https://github.com/nailasuely/breakout-problem3/blob/main/assets/img/prancheta.png)
@@ -230,7 +227,6 @@ O sistema inicia corretamente, com todas as informações sendo exibidas no moni
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/teste_geral.gif" />
     <p> Funcionamento Geral do Sistema</p>
 </div>
-texto aqui 
 </p>
 
 **Controle pelo Botão do Arduino Supervisor:**
@@ -240,7 +236,6 @@ O botão do supervisor controla o funcionamento do Arduino no chão de fábrica.
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/botao_supervisor.gif" />
     <p> Botão do Arduino Supervisor</p>
 </div>
-texto aqui 
 </p>
 
 **Controle pelo Botão do Chão de Fábrica:**
@@ -250,7 +245,6 @@ O botão localizado no chão de fábrica funciona de maneira semelhante ao botã
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/botao_chao.gif" />
     <p> Botão do Chão de Fábrica</p>
 </div>
-texto aqui 
 </p>
 
 **Controle do Motor 1:**
@@ -260,7 +254,6 @@ O potenciômetro 1 permite ajustar a velocidade de giro do motor 1. Esse ajuste 
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/motor_1.gif" />
     <p> Controle do Motor 1</p>
 </div>
-texto aqui 
 </p>
 
 **Controle do Motor 2:**
@@ -270,7 +263,6 @@ Da mesma forma, o potenciômetro 2 controla a velocidade de giro do motor 2, tam
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/motor_2.gif" />
     <p> Controle do Motor 2</p>
 </div>
-texto aqui 
 </p>
 
 **Parada por Temperatura Crítica:**
@@ -280,7 +272,6 @@ Se a temperatura atinge valores fora da faixa de operação, o sistema entra em 
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/temperatura_critica.gif" />
     <p> Temperatura Crítica</p>
 </div>
-texto aqui 
 </p>
 
 **Sensor de Inclinação:**
@@ -290,7 +281,6 @@ Quando o sensor detecta uma inclinação anormal, o sistema interrompe imediatam
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/inclinacao.gif" />
     <p> Sensor de Inclinação</p>
 </div>
-texto aqui 
 </p>
 
 **Sensor de Movimento:**
@@ -300,7 +290,6 @@ Ao detectar movimento inesperado, o sensor interrompe automaticamente a produç�
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/movimento.gif" />
     <p> Sensor de Movimento</p>
 </div>
-texto aqui 
 </p>
 
 
