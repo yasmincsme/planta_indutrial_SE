@@ -207,7 +207,7 @@ O sistema inicia corretamente, com todas as informações sendo exibidas no moni
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/teste_geral.gif" />
-    <p> Fig X. Teste</p>
+    <p> Funcionamento Geral do Sistema</p>
 </div>
 texto aqui 
 </p>
@@ -217,7 +217,7 @@ O botão do supervisor controla o funcionamento do Arduino no chão de fábrica.
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/botao_supervisor.gif" />
-    <p> Fig X. Teste</p>
+    <p> Botão do Arduino Supervisor</p>
 </div>
 texto aqui 
 </p>
@@ -227,7 +227,7 @@ O botão localizado no chão de fábrica funciona de maneira semelhante ao botã
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/botao_chao.gif" />
-    <p> Fig X. Teste</p>
+    <p> Botão do Chão de Fábrica</p>
 </div>
 texto aqui 
 </p>
@@ -237,7 +237,7 @@ O potenciômetro 1 permite ajustar a velocidade de giro do motor 1. Esse ajuste 
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/motor_1.gif" />
-    <p> Fig X. Teste</p>
+    <p> Controle do Motor 1</p>
 </div>
 texto aqui 
 </p>
@@ -247,7 +247,7 @@ Da mesma forma, o potenciômetro 2 controla a velocidade de giro do motor 2, tam
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/motor_2.gif" />
-    <p> Fig X. Teste</p>
+    <p> Controle do Motor 2</p>
 </div>
 texto aqui 
 </p>
@@ -257,7 +257,7 @@ Se a temperatura atinge valores fora da faixa de operação, o sistema entra em 
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/temperatura_critica.gif" />
-    <p> Fig X. Teste</p>
+    <p> Temperatura Crítica</p>
 </div>
 texto aqui 
 </p>
@@ -267,7 +267,7 @@ Quando o sensor detecta uma inclinação anormal, o sistema interrompe imediatam
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/inclinacao.gif" />
-    <p> Fig X. Teste</p>
+    <p> Sensor de Inclinação</p>
 </div>
 texto aqui 
 </p>
@@ -277,7 +277,7 @@ Ao detectar movimento inesperado, o sensor interrompe automaticamente a produç�
 
 <div align="center">
    <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/movimento.gif" />
-    <p> Fig X. Teste</p>
+    <p> Sensor de Movimento</p>
 </div>
 texto aqui 
 </p>
