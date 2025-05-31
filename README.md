@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img width="250px" src="https://github.com/user-attachments/assets/10658128-1727-4037-a39d-4924d7be1ec1"> 
+    <img width="200x" src="https://github.com/user-attachments/assets/10658128-1727-4037-a39d-4924d7be1ec1"> 
   <br>
   Controle de uma planta industrial
   <br>
