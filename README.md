@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img width="200x" src="https://github.com/user-attachments/assets/10658128-1727-4037-a39d-4924d7be1ec1"> 
+    <img width="200x" src="https://github.com/nailasuely/planta_industrial_SE/blob/main/assets/logo.png"> 
   <br>
   Controle de uma planta industrial
   <br>
@@ -12,7 +12,7 @@
 <p align="center">
 <div align="center">
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nailasuely/Redes-Problem2/blob/main/README.md)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nailasuely/planta_industrial_SE/blob/main/LICENSE)
 
 
 > Esse é um projeto da disciplina TEC 470 - Sistemas Embarcados, no qual ocorre o desenvolvimento de  um sistema de controle industrial para corte automatizado de blocos de madeira, utilizando dois Arduinos Nano que se comunicam via protocolo I2C. O sistema monitora sensores e controla motores.
@@ -47,8 +47,7 @@ Este projeto simula um sistema de controle para uma linha de corte de madeira au
 * **Arduino Supervisor:** Atua como uma central de gerenciamento, enviando comandos e monitorando o status geral da planta.
 * **Arduino Chão de Fábrica:** Controla diretamente os motores de corte, lê dados de sensores (temperatura, inclinação da madeira, presença de operadores, nível de óleo) e opera alertas.
 
-Ambos se comunicam via **I2C**, com o "Chão de Fábrica" como mestre e o "Supervisor" como escravo. O foco foi desenvolver em **linguagem C pura, manipulando registradores do ATmega328p** para um controle preciso e eficiente do hardware.
-
+Ambos se comunicam via **I2C**, com o "Chão de Fábrica" como mestre e o "Supervisor" como escravo. O foco foi desenvolver em **linguagem C pura, manipulando registradores do ATmega328p**.
 ![-----------------------------------------------------](https://github.com/nailasuely/breakout-problem3/blob/main/assets/img/prancheta.png)
 
 
