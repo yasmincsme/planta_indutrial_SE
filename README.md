@@ -208,7 +208,7 @@ No entanto, a leitura de sinais analógicos apresenta algumas dificuldades. Esse
 
 Outros fatores, como instabilidade na alimentação, interferências eletromagnéticas, variações de temperatura e não linearidades dos sensores, também podem comprometer a confiabilidade da leitura. Diante dessas dificuldades, optamos por utilizar potenciômetros e chaves (botões ou sensores digitais) para a leitura dos sensores no projeto. Essa escolha visa simplificar o sistema, reduzir os impactos do ruído e aumentar a robustez e a confiabilidade das medições, uma vez que os sinais digitais são menos suscetíveis a variações e interferências.
 
-## Temporização
+### Temporização
 
 A temporização no projeto foi implementada utilizando os timers internos dos microcontroladores dos Arduinos, configurados diretamente a nível de registrador. Essa abordagem garante maior precisão e controle sobre os intervalos de tempo, evitando o uso de funções como *delay()* que bloqueiam o funcionamento do programa. Os timers foram configurados no modo CTC (Clear Timer on Compare), permitindo que a cada estouro, uma interrupção seja gerada. Dentro dessas rotinas de interrupção, são atualizadas variáveis de contagem de tempo, que funcionam como bases para temporizar diferentes eventos do sistema.
 
