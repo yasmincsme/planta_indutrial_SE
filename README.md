@@ -152,16 +152,16 @@ O sistema opera com dois Arduinos Nano em uma configuração Master/Slave via I2
 
 No contexto deste projeto, o sensor de movimento foi representado por uma chave DIP (Dual In-line Package), especificamente a chave DIP 1. Esta chave atua como um sensor digital, simulando a detecção de movimento de forma manual. Quando acionada, ela envia um sinal lógico alto (HIGH) para o microcontrolador, representando a presença de movimento. Quando desacionada, envia um sinal lógico baixo (LOW), indicando ausência de movimento. Essa abordagem facilita a simulação de diferentes cenários durante o desenvolvimento e os testes do sistema.
 
-### Sensor de Inclinação (Chave DIP 2)
-
-De maneira semelhante ao sensor de movimento, o sensor de inclinação foi representado pela chave DIP 2. Essa chave permite simular situações em que o dispositivo sofre uma inclinação além de um determinado limite. Quando a chave DIP 2 está acionada, o sistema interpreta que há inclinação, então o sistema é desativado e há o acionamento do motor de correção de eixo, representado no circuito por um segundo LED vermelho. 
-
 <div align="center">
-   <img width="" src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-adjustable-rotary-potentiometer-component-with-metal-knob-for-electrical-circuits-and-png-image_14201974.png" />
-    <p> Potenciômetro de 1K</p>
+   <img width="" src="https://github.com/yasmincsme/planta_indutrial_SE/blob/main/assets/switch_dip.png" />
+    <p> Exemplos de chaves DIP</p>
 </div>
 texto aqui 
 </p>
+
+### Sensor de Inclinação (Chave DIP 2)
+
+De maneira semelhante ao sensor de movimento, o sensor de inclinação foi representado pela chave DIP 2. Essa chave permite simular situações em que o dispositivo sofre uma inclinação além de um determinado limite. Quando a chave DIP 2 está acionada, o sistema interpreta que há inclinação, então o sistema é desativado e há o acionamento do motor de correção de eixo, representado no circuito por um segundo LED vermelho. 
 
 ### Sensor de Temperatura (Potenciômetro)
 
